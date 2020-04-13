@@ -16,7 +16,7 @@ setup(
     install_requires=[
     ],
     long_description=open('README.rst').read() + '\n' + open('CHANGES.rst').read(),
-    name='AFNIpyIO',
+    name='AFNIPyIO',
     namespace_packages=[
     ],
     packages=find_packages(),

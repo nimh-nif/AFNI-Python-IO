@@ -50,7 +50,7 @@ import tkFileDialog
 import subprocess as sp
 import numpy as np
 #custom python module to read in and write out AFNI files
-import AFNIpyIO as afni
+from afnipyio import AFNIPyIO as afni
 
 from scipy.sparse import *
 from operator import itemgetter
