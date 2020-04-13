@@ -1,5 +1,5 @@
-PLACE
-=====
+Run PLACE
+=========
 
 ::
 
@@ -9,4 +9,4 @@ PLACE
     make run
 
 
-.. img:: screenshot.png
+.. image:: screenshot.png
