@@ -9,7 +9,6 @@ setup(
     classifiers=[],
     description='',
     entry_points={
-        # 'z3c.autoinclude.plugin': 'target = plone',
     },
     keywords='',
     license='',
@@ -17,7 +16,7 @@ setup(
     install_requires=[
     ],
     long_description=open('README.rst').read() + '\n' + open('CHANGES.rst').read(),
-    name='',
+    name='AFNIpyIO',
     namespace_packages=[
     ],
     packages=find_packages(),
