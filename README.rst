@@ -7,3 +7,6 @@ PLACE
     source bin/activate
     make install
     make run
+
+
+.. img:: screenshot.png
