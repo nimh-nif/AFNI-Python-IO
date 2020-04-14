@@ -158,7 +158,7 @@ def makeunwarpmatrix(dmap, expan):
 
     #cropping phaseorigin to "correct" dimensions. Without user input crop value, it's kind of useless...
     #slicing in python is "inclusive" i.e. cropping anything below 0 and above 3200 requires [0:3200]
-    phaseorigin = phaseorigin[y1-1:y2, x1-1:x2]
+    phaseorigin = phaseorigin[int(y1-1):int(y2), int(x1-1):int(x2)]
     nread = crop[2]
     nphasevol = crop[3]
     nphasedmap = nphasevol*expan
@@ -224,7 +224,7 @@ def makeunwarpmatrix(dmap, expan):
     #Matlab apparently treats '1' as a scalar so I should be tiling 1 to the same size as j and phaseorigin
     s = np.tile(1,size)
     
-    unwarpmatrix = csc_matrix((s,(phaseorigin, j)), shape=(numpoints,numpoints))/expan
+    unwarpmatrix = csc_matrix((s,(phaseorigin, j)), shape=(int(numpoints),int(numpoints)))/expan
     return  unwarpmatrix
 
 #========================= Unwarp a volume given an unwarp matrix ======================
